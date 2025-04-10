@@ -2,8 +2,8 @@ import streamlit as st
 st.set_page_config(layout="wide")
 
 from mainPages import dataset_info, model_training, model_comparison, model_testing
-# from utils.download_models import download_all_models
-# download_all_models()
+from utils.download_models import download_all_models
+download_all_models()
 
 # Optional: CSS hide menu
 hide_streamlit_style = """

@@ -13,7 +13,7 @@ venv/
 
 # Models (optional, if big)
 # models/
-# models1/
+models1/
 
 # Checkpoints / history
 training_history/

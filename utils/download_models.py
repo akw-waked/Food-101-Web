@@ -1,24 +1,17 @@
-import gdown
 import os
+import gdown
 
-def download_model(file_id, output):
-    url = f"https://drive.google.com/uc?id={file_id}"
-    os.makedirs(os.path.dirname(output), exist_ok=True)
+def create_model_dirs():
+    os.makedirs("models/baseline", exist_ok=True)
+    os.makedirs("models/pretrained_freeze", exist_ok=True)
+    os.makedirs("models/pretrained_unfreeze", exist_ok=True)
+
+def download_model(url, output):
     if not os.path.exists(output):
-        print(f"Downloading {output}...")
         gdown.download(url, output, quiet=False)
-    else:
-        print(f"{output} already exists.")
 
 def download_all_models():
-    models = {
-        "models/baseline/food101_checkpoint_best.pth": "1QkRUleJcn_5sKiuN2SXyJXJ3XGrg2QCE",
-        "models/pretrained_freeze/food101_checkpoint_best.pth": "1pO76sPOStJ2fXq7C0kB_eHp9dUvFiURZ",
-        "models/pretrained_unfreeze/food101_checkpoint_best.pth": "13OQ38gMW_cIRsZ7sYalLp6iOL3bfGiKm",
-    }
-
-    for output, file_id in models.items():
-        download_model(file_id, output)
-
-# Call the function
-download_all_models()
+    create_model_dirs()
+    download_model("https://drive.google.com/uc?id=1QkRUleJcn_5sKiuN2SXyJXJ3XGrg2QCE", "models/baseline/food101_checkpoint_best.pth")
+    download_model("https://drive.google.com/uc?id=1pO76sPOStJ2fXq7C0kB_eHp9dUvFiURZ", "models/pretrained_freeze/food101_checkpoint_best.pth")
+    download_model("https://drive.google.com/uc?id=13OQ38gMW_cIRsZ7sYalLp6iOL3bfGiKm", "models/pretrained_unfreeze/food101_checkpoint_best.pth")
