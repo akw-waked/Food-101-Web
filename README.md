@@ -18,7 +18,7 @@ An interactive Streamlit application for visualizing **Food-101** image classifi
 ## Installation
 
 ```bash
-git clone https://github.com/akw-waked/food101-web.git
+git clone https://github.com/akw-waked/Food-101-Web
 cd food101-web
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
