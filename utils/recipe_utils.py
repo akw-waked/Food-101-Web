@@ -1,11 +1,13 @@
 import requests
 import os
 from dotenv import load_dotenv
+import streamlit as st
 
 load_dotenv()  # load .env file
 
 def get_recipe_and_nutrition(class_name):
-    api_key = os.getenv("SPOONACULAR_API_KEY")
+    # api_key = os.getenv("SPOONACULAR_API_KEY")
+    api_key = st.secrets["SPOONACULAR_API_KEY"]
     search_url = f"https://api.spoonacular.com/recipes/complexSearch?query={class_name}&addRecipeInformation=true&number=1&apiKey={api_key}"
 
     try:
