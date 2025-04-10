@@ -33,7 +33,7 @@ models = load_models()
 
 def show():
     st.markdown("## 🤖 Model Predictions Comparison")
-
+    models = load_models()
     # CSS Styling
     css_file = os.path.join(os.path.dirname(__file__), '..', 'style.css')
     with open(css_file) as f:
