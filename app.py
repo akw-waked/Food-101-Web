@@ -2,10 +2,12 @@ import streamlit as st
 st.set_page_config(layout="wide")
 from utils.download_models import download_all_models
 
-from mainPages import dataset_info, model_training, model_comparison, model_testing
-with st.spinner("Downloading model files..."):
+with st.spinner("Downloading models, please wait..."):
+    from utils.download_models import download_all_models
     download_all_models()
 st.success("Models downloaded successfully!")
+
+from mainPages import dataset_info, model_training, model_comparison, model_testing
 
 # Optional: CSS hide menu
 hide_streamlit_style = """
