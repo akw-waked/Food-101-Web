@@ -12,7 +12,8 @@ venv/
 .streamlit/
 
 # Models (optional, if big)
-models/
+# models/
+# models1/
 
 # Checkpoints / history
 training_history/
