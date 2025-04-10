@@ -12,7 +12,8 @@ An interactive Streamlit application for visualizing **Food-101** image classifi
 
 ## Demo
 
-![Heatmap](images/heatmap_example.png)
+![Predicted Image](assets/predictedImage.png)
+![API Recipe](assets/API-Recipe.png)
 
 ## Installation
 
