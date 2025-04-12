@@ -1,7 +1,6 @@
 # 🍽️ Food-101 Web App 
 
 An interactive Streamlit application for visualizing **Food-101** image classification models with Grad-CAM explanations and recipe recommendations.
-[Check the Live Web App](https://food-101-web-dl.streamlit.app/)
 
 👉 **[Check the Live Web App](https://food-101-web-dl.streamlit.app/)**
 
