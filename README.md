@@ -37,7 +37,7 @@ The training application focuses on building, training, and evaluating deep lear
   - Evaluation metrics (Accuracy, Classification Report, Confusion Matrix)
   - Training history and performance graphs
  
-Installation (Training App)
+### Installation (Training App)
 Just download train.ipynb, open it, and run the notebook cells step by step.
 The application will automatically:
 Download the Food-101 dataset
