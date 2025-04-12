@@ -40,9 +40,9 @@ The training application focuses on building, training, and evaluating deep lear
 ### Installation (Training App)
 Just download train.ipynb, open it, and run the notebook cells step by step.
 The application will automatically:
-Download the Food-101 dataset
-Create all necessary folders and files for models and outputs
-Start the training process and save the best model checkpoint
+- Download the Food-101 dataset
+- Create all necessary folders and files for models and outputs
+- Start the training process and save the best model checkpoint
 
 ```
 python -m venv venv-train
