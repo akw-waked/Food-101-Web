@@ -14,9 +14,9 @@ An interactive Streamlit application for visualizing **Food-101** image classifi
 
 ## Image
 
-<img src="assets/predictedImage.png" alt="Predicted Image" width="500"/>
+<img src="assets/predictedImage.png" alt="Predicted Image" width="600"/>
 <br>
-<img src="assets/API-Recipe.png" alt="API Recipe" width="500"/>
+<img src="assets/API-Recipe.png" alt="API Recipe" width="600"/>
 
 
 ## Installation
