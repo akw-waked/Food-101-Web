@@ -36,6 +36,19 @@ The training application focuses on building, training, and evaluating deep lear
   - Trained model checkpoint (`.pth` file)
   - Evaluation metrics (Accuracy, Classification Report, Confusion Matrix)
   - Training history and performance graphs
+ 
+Installation (Training App)
+Just download train.ipynb, open it, and run the notebook cells step by step.
+The application will automatically:
+Download the Food-101 dataset
+Create all necessary folders and files for models and outputs
+Start the training process and save the best model checkpoint
+
+```
+python -m venv venv-train
+source venv-train/bin/activate  # On Windows: venv-train\Scripts\activate
+pip install -r requirements.txt
+```
     
 ## 2. Deployment Application (Web App)
 
@@ -58,8 +71,8 @@ The training application focuses on building, training, and evaluating deep lear
 
 ```bash
 git clone https://github.com/akw-waked/Food-101-Web
-cd food101-web
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+cd food-101-web
+python -m venv venv-web
+source venv-web/bin/activate  # On Windows: venv-web\Scripts\activate
 pip install -r requirements.txt
 streamlit run app.py
